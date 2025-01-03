@@ -72,18 +72,12 @@
         </ul>
         <div class="tab-content p-3 border-top-0 border">
           <div class="tab-pane fade show active" id="query-params" role="tabpanel" aria-labelledby="query-params-tab">
-            <div data-query-params>
-              <div class="input-group my-2" data-key-value-pair>
-                <input type="text" class="form-control" data-key placeholder="Key">
-                <input type="text" class="form-control" data-value placeholder="Value">
-                <button type="button" class="btn btn-outline-danger">Remove</button>
-              </div>
-            </div>
-            <button data-add-query-param-btn class="mt-2 btn btn-outline-success">Add</button>
+            <button data-add-query-param-btn class="mt-2 btn btn-outline-success" type="button">Add</button>
+            <div data-query-params></div>
           </div>
           <div class="tab-pane fade" id="request-headers" role="tabpanel" aria-labelledby="request-headers-tab">
+            <button data-add-request-header-btn class="mt-2 btn btn-outline-success" type="button">Add header</button>
             <div data-request-headers></div>
-            <button data-add-header-btn class="mt-2 btn btn-outline-success">Add header</button>
           </div>
           <div class="tab-pane fade" id="json" role="tabpanel" aria-labelledby="json-tab">
             <div data-json-request-body class="overflow-auto" style="max-height: 200px;"></div>
@@ -96,7 +90,7 @@
       <div class="input-group my-2" data-key-value-pair>
         <input type="text" class="form-control" data-key placeholder="Key">
         <input type="text" class="form-control" data-value placeholder="Value">
-        <button type="button" class="btn btn-outline-danger">Remove</button>
+        <button type="button" data-remove-btn class="btn btn-outline-danger">Remove</button>
       </div>
     </template>
   </body>
